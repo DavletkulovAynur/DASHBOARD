@@ -1,13 +1,12 @@
-import './App.css'
-import Main from './pages/Main'
+import "./App.module.css";
+import Main from "./pages/Main";
 
 function App() {
-
   return (
-    <>
-     <Main />
-    </>
-  )
+    <div>
+      <Main />
+    </div>
+  );
 }
 
-export default App
+export default App;
