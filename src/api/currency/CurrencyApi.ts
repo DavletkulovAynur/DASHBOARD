@@ -5,7 +5,7 @@ export const CurrencyApi = BaseApi.injectEndpoints({
     getData: builder.query<unknown, void>({
       query: () => {
         return {
-          url: "/todos",
+          url: "todos",
           method: "GET",
         };
       },
