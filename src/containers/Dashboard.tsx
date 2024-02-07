@@ -1,6 +1,9 @@
+import { CurrencyApi } from "../api";
 import css from "./dashboard.module.css";
 
 const Dashboard = () => {
+  const { data } = CurrencyApi.useGetDataQuery();
+  console.log("data", data);
   return (
     <div>
       <div className={css.dashboard}>
