@@ -1,4 +1,6 @@
 .dashboard {
   background-color: var(--background-default);
   border-radius: 8px;
+  width: 80%;
+  padding: 20px;
 }
