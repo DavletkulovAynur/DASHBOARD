@@ -2,9 +2,17 @@ import { Tab } from "../../components/Tab";
 import { Balance } from "./balance";
 import css from "./styles/dashboard.module.css";
 
+const DashboardContainer = () => {
+  return (
+    <div>
+      <Balance />
+    </div>
+  );
+};
+
 const Dashboard = () => {
   const tabs = ["CUSHION", "INVESTMENTS"];
-  const panels = [<Balance />, <Balance />];
+  const panels = [<DashboardContainer />, <DashboardContainer />];
 
   return (
     <div className={css.dashboard}>
