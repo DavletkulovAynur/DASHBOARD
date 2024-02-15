@@ -1,2 +1,2 @@
 export { default as Api } from "./BaseApi";
-export * from "./currency/CurrencyApi";
+export { default as CurrencyApi } from "./currency/CurrencyApi";
