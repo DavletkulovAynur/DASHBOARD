@@ -1,14 +1,28 @@
 import BaseApi from "../BaseApi";
 
-export const CurrencyApi = BaseApi.injectEndpoints({
+const BalanceApi = BaseApi.injectEndpoints({
   endpoints: (builder) => ({
-    getData: builder.query<unknown, void>({
+    getBalance: builder.query<unknown, void>({
       query: () => {
         return {
-          url: "todos",
+          url: "/balance",
           method: "GET",
+        };
+      },
+    }),
+    //Мутации используются для отправки обновлений данных на сервер и применения изменений в локальном кеше.
+    //Нужно будет поэкперементировать с мутациями
+    setBalance: builder.mutation<unknown, void>({
+      query: () => {
+        return {
+          url: "/balance",
+          method: "POST",
         };
       },
     }),
   }),
 });
+
+//
+
+export default BalanceApi;

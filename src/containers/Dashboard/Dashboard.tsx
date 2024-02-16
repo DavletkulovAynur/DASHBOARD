@@ -11,6 +11,10 @@ const DashboardContainer = () => {
 };
 
 const Dashboard = () => {
+  //API
+    
+
+  //
   const tabs = ["CUSHION", "INVESTMENTS"];
   const panels = [<DashboardContainer />, <DashboardContainer />];
 
