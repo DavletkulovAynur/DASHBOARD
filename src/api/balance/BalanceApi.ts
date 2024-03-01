@@ -1,6 +1,5 @@
 import BaseApi from "../BaseApi";
 
-//
 const BalanceApi = BaseApi.injectEndpoints({
   endpoints: (builder) => ({
     getBalance: builder.query<unknown, void>({

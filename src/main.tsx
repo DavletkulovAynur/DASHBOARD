@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import App from "./App.tsx";
+//styles
 import "./index.css";
 import "react-tabs/style/react-tabs.css";
+import 'reactjs-popup/dist/index.css';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
