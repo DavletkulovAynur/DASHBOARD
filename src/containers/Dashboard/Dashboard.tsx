@@ -1,22 +1,11 @@
 import { Tab } from "../../components/Tab";
-import { Balance } from "./balance";
+import Balance from "./balance";
+import Investment from "./investment";
 import css from "./styles/dashboard.module.css";
 
-const DashboardContainer = () => {
-  return (
-    <div>
-      <Balance />
-    </div>
-  );
-};
-
 const Dashboard = () => {
-  //API
-    
-
-  //
-  const tabs = ["CUSHION", "INVESTMENTS"];
-  const panels = [<DashboardContainer />, <DashboardContainer />];
+  const tabs = ["BALANCE", "INVESTMENTS"];
+  const panels = [<Balance />, <Investment />];
 
   return (
     <div className={css.dashboard}>
